@@ -1,0 +1,367 @@
+@import "variables";
+
+@mixin screen-sm {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin screen-2xl {
+  @media screen and (min-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin kalameh-bold80 {
+  font-family: $font-kalameh;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold72 {
+  font-family: $font-kalameh;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold64 {
+  font-family: $font-kalameh;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold56 {
+  font-family: $font-kalameh;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold48 {
+  font-family: $font-kalameh;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold40 {
+  font-family: $font-kalameh;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold36 {
+  font-family: $font-kalameh;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold32 {
+  font-family: $font-kalameh;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold28 {
+  font-family: $font-kalameh;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@mixin kalameh-bold24 {
+  font-family: $font-kalameh;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin regular20 {
+  font-family: $font-yekan-bakh;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin regular18 {
+  font-family: $font-yekan-bakh;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin regular16 {
+  font-family: $font-yekan-bakh;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin regular15 {
+  font-family: $font-yekan-bakh;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@mixin regular14 {
+  font-family: $font-yekan-bakh;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@mixin regular13 {
+  font-family: $font-yekan-bakh;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+@mixin regular12 {
+  font-family: $font-yekan-bakh;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@mixin regular11 {
+  font-family: $font-yekan-bakh;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+@mixin regular10 {
+  font-family: $font-yekan-bakh;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@mixin bold42 {
+  font-family: $font-yekan-bakh;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+@mixin bold36 {
+  font-family: $font-yekan-bakh;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin bold32 {
+  font-family: $font-yekan-bakh;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@mixin bold28 {
+  font-family: $font-yekan-bakh;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@mixin bold24 {
+  font-family: $font-yekan-bakh;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin bold20 {
+  font-family: $font-yekan-bakh;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@mixin bold18 {
+  font-family: $font-yekan-bakh;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin bold16 {
+  font-family: $font-yekan-bakh;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@mixin bold14 {
+  font-family: $font-yekan-bakh;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@mixin bold13 {
+  font-family: $font-yekan-bakh;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@mixin bold12 {
+  font-family: $font-yekan-bakh;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@mixin bold11 {
+  font-family: $font-yekan-bakh;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+@mixin bold10 {
+  font-family: $font-yekan-bakh;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@mixin semibold42 {
+  font-family: $font-yekan-bakh;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+@mixin semibold36 {
+  font-family: $font-yekan-bakh;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+@mixin semibold32 {
+  font-family: $font-yekan-bakh;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@mixin semibold28 {
+  font-family: $font-yekan-bakh;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@mixin semibold24 {
+  font-family: $font-yekan-bakh;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@mixin semibold20 {
+  font-family: $font-yekan-bakh;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@mixin semibold18 {
+  font-family: $font-yekan-bakh;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@mixin semibold16 {
+  font-family: $font-yekan-bakh;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin semibold14 {
+  font-family: $font-yekan-bakh;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@mixin semibold13 {
+  font-family: $font-yekan-bakh;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@mixin semibold12 {
+  font-family: $font-yekan-bakh;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@mixin semibold11 {
+  font-family: $font-yekan-bakh;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+@mixin semibold10 {
+  font-family: $font-yekan-bakh;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+@mixin black28 {
+  font-family: $font-yekan-bakh;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+@mixin black24 {
+  font-family: $font-yekan-bakh;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+@mixin black20 {
+  font-family: $font-yekan-bakh;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@mixin black18 {
+  font-family: $font-yekan-bakh;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+@mixin black16 {
+  font-family: $font-yekan-bakh;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+@mixin black15 {
+  font-family: $font-yekan-bakh;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+@mixin black14 {
+  font-family: $font-yekan-bakh;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+@mixin black13 {
+  font-family: $font-yekan-bakh;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+@mixin black12 {
+  font-family: $font-yekan-bakh;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+@mixin black11 {
+  font-family: $font-yekan-bakh;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+@mixin black10 {
+  font-family: $font-yekan-bakh;
+  font-size: 10px;
+  font-weight: 900;
+}

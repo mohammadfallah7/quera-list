@@ -1,0 +1,31 @@
+@import "variables";
+
+@font-face {
+  font-family: $font-yekan-bakh;
+  src: url(../assets/fonts/yekan-bakh/YekanBakh-Regular.woff2) format(woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $font-yekan-bakh;
+  src: url(../assets/fonts/yekan-bakh/YekanBakh-SemiBold.woff2) format(woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: $font-yekan-bakh;
+  src: url(../assets/fonts/yekan-bakh/YekanBakh-Bold.woff2) format(woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: $font-yekan-bakh;
+  src: url(../assets/fonts/yekan-bakh/YekanBakh-Black.woff2) format(woff2);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: $font-kalameh;
+  src: url(../assets/fonts/kalameh/Kalameh-Bold.woff2);
+  font-weight: 700;
+}

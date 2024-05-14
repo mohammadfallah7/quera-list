@@ -1,0 +1,93 @@
+@import "variables";
+@import "fonts";
+@import "globals";
+@import "mixins";
+
+.header {
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+
+    @include screen-md {
+      position: initial;
+      padding: 16px 20px;
+      justify-content: space-between;
+    }
+  }
+
+  &__humber {
+    @include screen-md {
+      display: none;
+    }
+  }
+
+  &__logo {
+    a {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      @include semibold16;
+
+      @include screen-md {
+        position: initial;
+        transform: unset;
+        @include semibold20;
+      }
+    }
+
+    @include screen-md {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+  }
+
+  &__nav {
+    ul {
+      display: none;
+
+      @include screen-md {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        li {
+          a {
+            @include semibold16;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $primary-hover-light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__actions {
+    display: none;
+
+    @include screen-md {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &__auth {
+        padding: 8px 24px;
+        @include semibold16;
+      }
+
+      &__toggle {
+        padding: 8px;
+      }
+    }
+  }
+}

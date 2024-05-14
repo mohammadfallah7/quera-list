@@ -3,7 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quera List</title>
+    <title>کوئرا لیست | تمرکز رو وارد زندگیت کن</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Start Header -->
+    <header class="header">
+      <div class="header__wrapper bg-[#ffffff] dark:bg-[#040810]">
+        <div class="header__inner container mx-auto">
+          <button class="header__humber">
+            <img src="../assets/icons/menu.svg" alt="منو" class="dark:hidden" />
+            <img
+              src="../assets/icons/menu-dark.svg"
+              alt="منو"
+              class="hidden dark:block"
+            />
+          </button>
+          <div class="header__logo">
+            <a href="index.html" class="text-[#141414] dark:text-[#FFFFFF]"
+              >کوئرا لیست</a
+            >
+            <nav class="header__nav">
+              <ul>
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-[#666666] hover:text-[#075cd9] dark:text-[#CFCFCF] dark:hover:text-[#6ba4fa]"
+                    >صفحه اصلی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-[#666666] hover:text-[#075cd9] dark:text-[#CFCFCF] dark:hover:text-[#6ba4fa]"
+                    >درباره ما</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-[#666666] hover:text-[#075cd9] dark:text-[#CFCFCF] dark:hover:text-[#6ba4fa]"
+                    >ارتباط با ما</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__actions">
+            <button
+              class="header__actions__auth rounded bg-[#2c7ef8] text-[#ffffff] dark:bg-[#3a86f8] dark:text-[#ffffff]"
+            >
+              ورود به اپلیکیشن
+            </button>
+            <button
+              class="header__actions__toggle rounded border border-solid border-[#e3e3e3] dark:border-[#2F3132]"
+            >
+              <img src="../assets/icons/toggle-theme.svg" alt="تغییر تم" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Finish Header -->
+  </body>
 </html>
