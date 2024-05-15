@@ -20,6 +20,11 @@
 }
 @font-face {
   font-family: "Kalameh";
+  src: url(../assets/fonts/kalameh/Kalameh-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kalameh";
   src: url(../assets/fonts/kalameh/Kalameh-Bold.woff2);
   font-weight: 700;
 }
@@ -42,6 +47,11 @@
   font-family: "Yekan Bakh";
   src: url(../assets/fonts/yekan-bakh/YekanBakh-Black.woff2) format(woff2);
   font-weight: 900;
+}
+@font-face {
+  font-family: "Kalameh";
+  src: url(../assets/fonts/kalameh/Kalameh-Regular.woff2);
+  font-weight: 400;
 }
 @font-face {
   font-family: "Kalameh";
@@ -135,4 +145,140 @@
   .header__actions__toggle {
     padding: 8px;
   }
+}
+
+.introduce__wrapper {
+  width: 100%;
+}
+.introduce__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+}
+.introduce__inner__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 64px;
+}
+.introduce__inner__title--medium {
+  font-family: "Kalameh";
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .introduce__inner__title--medium {
+    font-family: "Kalameh";
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduce__inner__title--medium {
+    font-family: "Kalameh";
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
+.introduce__inner__title--large {
+  font-family: "Kalameh";
+  font-size: 32px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .introduce__inner__title--large {
+    font-family: "Kalameh";
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduce__inner__title--large {
+    font-family: "Kalameh";
+    font-size: 56px;
+    font-weight: 700;
+  }
+}
+.introduce__inner__description {
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .introduce__inner__description {
+    padding: 0 64px;
+  }
+}
+.introduce__inner__description p {
+  font-family: "Yekan Bakh";
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .introduce__inner__description p {
+    font-family: "Yekan Bakh";
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduce__inner__description p {
+    font-family: "Yekan Bakh";
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduce__inner__description {
+    width: 80%;
+  }
+}
+.introduce__inner__actions {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  font-family: "Yekan Bakh";
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .introduce__inner__actions {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduce__inner__actions {
+    width: 30%;
+    font-family: "Yekan Bakh";
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.introduce__inner__actions--auth {
+  padding: 10px 0;
+  width: 50%;
+}
+.introduce__inner__actions--about {
+  padding: 10px 0;
+  width: 50%;
+}
+.introduce__inner__picture {
+  overflow: hidden;
+}
+.introduce__inner__picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.introduce__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -999;
 }/*# sourceMappingURL=style.css.map */

@@ -26,6 +26,12 @@
 
 @font-face {
   font-family: $font-kalameh;
+  src: url(../assets/fonts/kalameh/Kalameh-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $font-kalameh;
   src: url(../assets/fonts/kalameh/Kalameh-Bold.woff2);
   font-weight: 700;
 }

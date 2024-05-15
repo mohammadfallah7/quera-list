@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body
+    class="bg-[#ffffff] text-[#191c1e] dark:bg-[#040810] dark:text-[#e6e9ef]"
+  >
     <!-- Start Header -->
     <header class="header">
       <div class="header__wrapper bg-[#ffffff] dark:bg-[#040810]">
@@ -66,5 +68,84 @@
       </div>
     </header>
     <!-- Finish Header -->
+
+    <main>
+      <!-- Start Introduce -->
+      <div class="introduce">
+        <div class="introduce__wrapper">
+          <div class="introduce__inner container mx-auto">
+            <div class="introduce__inner__title relative">
+              <h2 class="introduce__inner__title--medium">
+                تمرکز رو وارد زندگیت کن
+              </h2>
+              <h1 class="introduce__inner__title--large">
+                به سمت اهدافت اوج بگیر
+              </h1>
+              <img
+                src="../assets/icons/line.svg"
+                alt="Line"
+                class="w-36 mt-3 md:w-48 lg:w-60"
+              />
+              <img
+                src="../assets/icons/star.svg"
+                alt="Star"
+                class="absolute w-6 lg:w-auto -top-5 -right-5 md:-right-10 lg:-right-16 dark:hidden"
+              />
+              <img
+                src="../assets/icons/star.svg"
+                alt="Star"
+                class="absolute w-6 lg:w-auto -bottom-5 -left-10 md:-left-20 lg:-left-28 dark:hidden"
+              />
+              <img
+                src="../assets/icons/star-dark.svg"
+                alt="Star"
+                class="hidden absolute w-6 lg:w-auto -top-5 -right-5 md:-right-10 lg:-right-16 dark:block"
+              />
+              <img
+                src="../assets/icons/star-dark.svg"
+                alt="Star"
+                class="hidden absolute w-6 lg:w-auto -bottom-5 -left-10 md:-left-20 lg:-left-28 dark:block"
+              />
+            </div>
+
+            <div class="introduce__inner__description">
+              <p>
+                زمان در یک روز برای ما محدود است، اما مهمترین کار این است که
+                چگونه از آن استفاده می‌کنیم. با اپلیکیشن کوئرا لیست، زمان خود را
+                با هدف و برنامه‌ریزی موثر سپری کنید.
+              </p>
+            </div>
+            <div class="introduce__inner__actions">
+              <button
+                class="introduce__inner__actions--auth rounded bg-[#2c7ef8] text-[#ffffff] dark:bg-[#3a86f8] dark:text-[#ffffff]"
+              >
+                ورود به اپلیکیشن
+              </button>
+              <button
+                class="introduce__inner__actions--about rounded text-[#2c7ef8] bg-[#ebf3ff] dark:bg-[#0267FF40] dark:text-[#ffffff]"
+              >
+                درباره ما
+              </button>
+            </div>
+            <div class="introduce__inner__picture">
+              <img
+                src="../assets/images/application-image-light.png"
+                alt="دمو اپلیکیشن"
+                class="dark:hidden"
+              />
+              <img
+                src="../assets/images/application-image-dark.png"
+                alt="دمو اپلیکیشن"
+                class="hidden dark:block"
+              />
+            </div>
+          </div>
+          <div
+            class="introduce__overlay bg-gradient-to-b from-[#ebf3ff] to-[#ffffff] dark:from-[#0267FF40] dark:to-[#1A202C00]"
+          ></div>
+        </div>
+      </div>
+      <!-- Finish Introduce -->
+    </main>
   </body>
 </html>
