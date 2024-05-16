@@ -145,6 +145,7 @@
     &__description {
       text-align: center;
       margin-bottom: 32px;
+      line-height: 1.7;
 
       @include screen-lg {
         padding: 0 64px;
@@ -212,3 +213,117 @@
   }
 }
 // Finish Introduce
+
+// Start Feature
+.feature {
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__inner {
+    padding: 0 32px;
+
+    &__title {
+      text-align: center;
+      @include kalameh-regular20;
+      margin-top: 48px;
+      margin-bottom: 12px;
+
+      @include screen-md {
+        @include kalameh-regular28;
+      }
+
+      @include screen-lg {
+        @include kalameh-regular32;
+      }
+    }
+
+    &__description {
+      text-align: center;
+      @include regular13;
+      margin-bottom: 24px;
+      line-height: 1.7;
+
+      @include screen-md {
+        margin-bottom: 40px;
+        @include regular14;
+      }
+
+      @include screen-lg {
+        @include regular15;
+        padding: 0 200px;
+      }
+    }
+
+    &__items {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+
+      @include screen-md {
+        flex-wrap: nowrap;
+      }
+
+      @include screen-xl {
+        padding: 0 100px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      width: 45%;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 63px #00000008;
+
+      @include screen-md {
+        border-radius: 12px;
+      }
+
+      &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50%;
+
+        img {
+          width: 16px;
+
+          @include screen-md {
+            width: 20px;
+          }
+
+          @include screen-lg {
+            width: 24px;
+          }
+        }
+      }
+
+      &__title {
+        @include kalameh-bold14;
+        margin-bottom: 10px;
+        margin-top: 8px;
+        text-align: center;
+
+        @include screen-lg {
+          @include kalameh-bold15;
+        }
+      }
+
+      &__description {
+        @include regular12;
+        text-align: center;
+
+        @include screen-lg {
+          @include regular13;
+        }
+      }
+    }
+  }
+}
+// Finish Feature

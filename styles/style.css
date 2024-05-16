@@ -208,6 +208,7 @@
 .introduce__inner__description {
   text-align: center;
   margin-bottom: 32px;
+  line-height: 1.7;
 }
 @media screen and (min-width: 1024px) {
   .introduce__inner__description {
@@ -281,4 +282,136 @@
   position: absolute;
   inset: 0;
   z-index: -999;
+}
+
+.feature__wrapper {
+  width: 100%;
+}
+.feature__inner {
+  padding: 0 32px;
+}
+.feature__inner__title {
+  text-align: center;
+  font-family: "Kalameh";
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .feature__inner__title {
+    font-family: "Kalameh";
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature__inner__title {
+    font-family: "Kalameh";
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
+.feature__inner__description {
+  text-align: center;
+  font-family: "Yekan Bakh";
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .feature__inner__description {
+    margin-bottom: 40px;
+    font-family: "Yekan Bakh";
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature__inner__description {
+    font-family: "Yekan Bakh";
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 200px;
+  }
+}
+.feature__inner__items {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .feature__inner__items {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .feature__inner__items {
+    padding: 0 100px;
+  }
+}
+.feature__inner__item {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.031372549);
+}
+@media screen and (min-width: 768px) {
+  .feature__inner__item {
+    border-radius: 12px;
+  }
+}
+.feature__inner__item__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+.feature__inner__item__logo img {
+  width: 16px;
+}
+@media screen and (min-width: 768px) {
+  .feature__inner__item__logo img {
+    width: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature__inner__item__logo img {
+    width: 24px;
+  }
+}
+.feature__inner__item__title {
+  font-family: "Kalameh";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .feature__inner__item__title {
+    font-family: "Kalameh";
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+.feature__inner__item__description {
+  font-family: "Yekan Bakh";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .feature__inner__item__description {
+    font-family: "Yekan Bakh";
+    font-size: 13px;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=style.css.map */
