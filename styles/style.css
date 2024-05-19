@@ -69,12 +69,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 12px 16px;
+  padding: 12px 32px;
 }
 @media screen and (min-width: 768px) {
   .header__inner {
     position: initial;
-    padding: 16px 20px;
+    padding: 16px 32px;
     justify-content: space-between;
   }
 }
@@ -97,7 +97,7 @@
     position: initial;
     transform: unset;
     font-family: "Yekan Bakh";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
 }
@@ -119,7 +119,7 @@
   }
   .header__nav ul li a {
     font-family: "Yekan Bakh";
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     transition: color 0.3s ease;
   }
@@ -139,7 +139,7 @@
   .header__actions__auth {
     padding: 8px 24px;
     font-family: "Yekan Bakh";
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
   .header__actions__toggle {
@@ -872,5 +872,124 @@
   padding: 48px 0 20px 0;
   font-family: "Yekan Bakh";
   font-size: 12px;
+  font-weight: 400;
+}
+
+.about__wrapper {
+  width: 100%;
+}
+.about__inner {
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    grid-row: auto auto;
+    align-items: unset;
+  }
+}
+.about__inner__summary {
+  transition: background-color 0.3s ease;
+  order: 2;
+  margin-bottom: 40px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about__inner__summary {
+    order: unset;
+    grid-row: 1/3;
+    margin-bottom: unset;
+    margin-top: 96px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.about__inner__summary__title {
+  margin-bottom: 8px;
+  font-family: "Kalameh";
+  font-size: 20px;
+  font-weight: 700;
+}
+.about__inner__summary__name {
+  margin-bottom: 32px;
+  font-family: "Kalameh";
+  font-size: 28px;
+  font-weight: 700;
+}
+.about__inner__summary__description {
+  text-align: center;
+  line-height: 2;
+  font-family: "Yekan Bakh";
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .about__inner__summary__description {
+    text-align: start;
+    font-family: "Yekan Bakh";
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about__inner__summary__description {
+    font-family: "Yekan Bakh";
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.about__inner__image {
+  order: 1;
+  margin-top: 24px;
+}
+.about__inner__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .about__inner__image {
+    order: unset;
+    grid-row: 1/2;
+    margin-top: 96px;
+  }
+}
+.about__inner__items {
+  order: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .about__inner__items {
+    order: unset;
+    grid-row: 2/3;
+  }
+}
+.about__inner__items__item {
+  width: 45%;
+  transition: background-color 0.3s ease;
+}
+.about__inner__items__item--large {
+  font-family: "Yekan Bakh";
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.about__inner__items__item--small {
+  font-family: "Yekan Bakh";
+  font-size: 15px;
   font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
