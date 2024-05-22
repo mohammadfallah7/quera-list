@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با من | کوئرا لیست</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#ffffff] text-[#191c1e] dark:bg-[#040810] dark:text-[#e6e9ef]"
+  >
+    <!-- Start Header -->
+    <header class="header shadow">
+      <div class="header__wrapper bg-[#ffffff] dark:bg-[#040810]">
+        <div class="header__inner container mx-auto">
+          <button class="header__humber">
+            <img src="../assets/icons/menu.svg" alt="منو" class="dark:hidden" />
+            <img
+              src="../assets/icons/menu-dark.svg"
+              alt="منو"
+              class="hidden dark:block"
+            />
+          </button>
+          <div class="header__logo">
+            <a href="index.html" class="text-[#141414] dark:text-[#FFFFFF]"
+              >کوئرا لیست</a
+            >
+            <nav class="header__nav">
+              <ul>
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-[#666666] hover:text-[#075cd9] dark:text-[#CFCFCF] dark:hover:text-[#6ba4fa]"
+                    >صفحه اصلی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="text-[#666666] hover:text-[#075cd9] dark:text-[#CFCFCF] dark:hover:text-[#6ba4fa]"
+                    >درباره ما</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="text-[#666666] hover:text-[#075cd9] dark:text-[#CFCFCF] dark:hover:text-[#6ba4fa]"
+                    >ارتباط با ما</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__actions">
+            <button
+              class="header__actions__auth rounded bg-[#2c7ef8] text-[#ffffff] dark:bg-[#3a86f8] dark:text-[#ffffff]"
+            >
+              ورود به اپلیکیشن
+            </button>
+            <button
+              class="header__actions__toggle rounded border border-solid border-[#e3e3e3] dark:border-[#2F3132]"
+            >
+              <img src="../assets/icons/toggle-theme.svg" alt="تغییر تم" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Finish Header -->
+
+    <main>
+      <div class="contact">
+        <div class="contact__wrapper">
+          <div id="contact-mobile" class="contact__inner container mx-auto">
+            <h1 class="contact__inner__title">تماس با ما</h1>
+            <p class="contact__inner__description">
+              چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+            </p>
+            <form
+              class="contact__inner__form shadow rounded-lg bg-white dark:bg-[#0B192D]"
+              action="#"
+              method="post"
+            >
+              <div class="contact__inner__form__name">
+                <div class="contact__inner__form__row">
+                  <label for="firstName">نام:</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="محمد"
+                    class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                  />
+                </div>
+                <div class="contact__inner__form__row">
+                  <label for="lastName">نام خانوادگی:</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="فلاح"
+                    class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                  />
+                </div>
+              </div>
+              <div class="contact__inner__form__row">
+                <label for="email">ایمیل:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  dir="ltr"
+                  placeholder="test@gmail.com"
+                  class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                />
+              </div>
+              <div class="contact__inner__form__row">
+                <label for="phone">شماره تماس:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="09121234567"
+                  class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                />
+              </div>
+              <div class="contact__inner__form__row">
+                <label for="message">متن پیام:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="پیام خود را بنویسید ..."
+                  class="border resize-none bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="contact__inner__form__btn text-white bg-[#2c7ef8] dark:bg-[#3a86f8]"
+              >
+                ارسال پیام
+              </button>
+            </form>
+            <div class="contact__inner__info">
+              <div
+                class="contact__inner__info__item bg-white dark:bg-[#0B192D] shadow pr-2 pl-1 py-3 rounded-lg"
+              >
+                <div class="contact__inner__info__item__icon bg-[#F5FBFF]">
+                  <img src="../assets/icons/email.svg" alt="Email" />
+                </div>
+                <div class="contact__inner__info__item__content">
+                  <h4 class="contact__inner__info__item__content--large">
+                    ایمیل
+                  </h4>
+                  <a
+                    href="mailto:mohammadfallah.w@gmail.com"
+                    class="contact__inner__info__item__content--small"
+                    >mohammadfallah.w@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="contact__inner__info__item bg-white dark:bg-[#0B192D] shadow pr-2 pl-1 py-3 rounded-lg"
+              >
+                <div class="contact__inner__info__item__icon bg-[#F5FBFF]">
+                  <img src="../assets/icons/call.svg" alt="Phone" />
+                </div>
+                <div class="contact__inner__info__item__content">
+                  <h4 class="contact__inner__info__item__content--large">
+                    تلفن
+                  </h4>
+                  <a
+                    href="tel:+989055153516"
+                    class="contact__inner__info__item__content--small"
+                    >09055153516</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact__inner__social shadow rounded-lg bg-white dark:bg-[#0B192D] py-3"
+            >
+              <div class="contact__inner__social__item bg-[#F5FBFF]">
+                <a href="https://github.com/mohammadfallah7" target="_blank">
+                  <img src="../assets/icons/github.svg" alt="Github" />
+                </a>
+              </div>
+              <div class="contact__inner__social__item bg-[#F5FBFF]">
+                <a href="https://x.com/fallahmohammad_" target="_blank">
+                  <img src="../assets/icons/twitter.svg" alt="Twitter" />
+                </a>
+              </div>
+              <div class="contact__inner__social__item bg-[#F5FBFF]">
+                <a
+                  href="https://linkedin.com/in/fallahmohammad"
+                  target="_blank"
+                >
+                  <img src="../assets/icons/linkedin.svg" alt="LinkedIn" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="contact-web"
+            class="contact__inner container shadow rounded-lg bg-white dark:bg-[#0B192D]"
+          >
+            <div class="contact__inner__information">
+              <div class="contact__inner__information__content">
+                <h1 class="contact__inner__information__content__title">
+                  تماس با ما
+                </h1>
+                <p class="contact__inner__information__content__description">
+                  چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+                </p>
+                <div class="contact__inner__information__content__call">
+                  <div class="contact__inner__information__content__call__logo">
+                    <img
+                      src="../assets/icons/call.svg"
+                      alt="Phone"
+                      class="dark:hidden"
+                    />
+                    <img
+                      src="../assets/icons/call-mobile-dark.svg"
+                      alt="Phone"
+                      class="hidden dark:block"
+                    />
+                  </div>
+                  <a
+                    href="tel:+989055153516"
+                    class="contact__inner__information__content__call__content"
+                  >
+                    09055153516
+                  </a>
+                </div>
+                <div class="contact__inner__information__content__call">
+                  <div class="contact__inner__information__content__call__logo">
+                    <img
+                      src="../assets/icons/email.svg"
+                      alt="Email"
+                      class="dark:hidden"
+                    />
+                    <img
+                      src="../assets/icons/email-dark.svg"
+                      alt="Email"
+                      class="hidden dark:block"
+                    />
+                  </div>
+                  <a
+                    href="mailto:mohammadfallah.w@gmail.com"
+                    class="contact__inner__information__content__call__content"
+                  >
+                    mohammadfallah.w@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div class="contact__inner__information__social">
+                <div class="contact__inner__information__social__item">
+                  <a href="https://github.com/mohammadfallah7" target="_blank">
+                    <img
+                      src="../assets/icons/github.svg"
+                      alt="Github"
+                      class="dark:hidden"
+                    />
+                    <img
+                      src="../assets/icons/github-dark.svg"
+                      alt="Github"
+                      class="hidden dark:block"
+                    />
+                  </a>
+                </div>
+                <div class="contact__inner__information__social__item">
+                  <a href="https://x.com/fallahmohammad_" target="_blank">
+                    <img
+                      src="../assets/icons/twitter.svg"
+                      alt="Twitter"
+                      class="dark:hidden"
+                    />
+                    <img
+                      src="../assets/icons/twitter-dark.svg"
+                      alt="Twitter"
+                      class="dark:block hidden"
+                    />
+                  </a>
+                </div>
+                <div class="contact__inner__information__social__item">
+                  <a
+                    href="https://linkedin.com/in/fallahmohammad"
+                    target="_blank"
+                  >
+                    <img
+                      src="../assets/icons/linkedin.svg"
+                      alt="LinkedIn"
+                      class="dark:hidden"
+                    />
+                    <img
+                      src="../assets/icons/linkedin-dark.svg"
+                      alt="LinkedIn"
+                      class="dark:block hidden"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact__inner__line">
+              <div class="h-full border-r dark:border-[#293242]"></div>
+            </div>
+            <form
+              class="contact__inner__form shadow md:shadow-none rounded-lg md:rounded-none bg-transparent dark:bg-transparent bg-white dark:bg-[#0B192D]"
+              action="#"
+              method="post"
+            >
+              <div class="contact__inner__form__name">
+                <div class="contact__inner__form__row">
+                  <label for="firstName">نام:</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="محمد"
+                    class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                  />
+                </div>
+                <div class="contact__inner__form__row">
+                  <label for="lastName">نام خانوادگی:</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="فلاح"
+                    class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                  />
+                </div>
+              </div>
+              <div class="contact__inner__form__row">
+                <label for="email">ایمیل:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  dir="ltr"
+                  placeholder="test@gmail.com"
+                  class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                />
+              </div>
+              <div class="contact__inner__form__row">
+                <label for="phone">شماره تماس:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="09121234567"
+                  class="border bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                />
+              </div>
+              <div class="contact__inner__form__row">
+                <label for="message">متن پیام:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="پیام خود را بنویسید ..."
+                  class="border resize-none bg-white dark:bg-[#0B192D] dark:border-[#293242]"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="contact__inner__form__btn text-white bg-[#2c7ef8] dark:bg-[#3a86f8]"
+              >
+                ارسال پیام
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__inner container mx-auto">
+          <h4 class="footer__inner__title">کوئرا لیست</h4>
+          <div class="footer__inner__contact">
+            <div class="footer__inner__contact__action">
+              <h5 class="footer__inner__contact__action__title">
+                با ما در ارتباط باش
+              </h5>
+              <p class="footer__inner__contact__action__description">
+                اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+                بشی.
+              </p>
+              <form
+                action="#"
+                class="footer__inner__contact__action__form relative my-8 md:my-0 md:mt-8"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="ایمیل"
+                  class="outline-none border dark:bg-[#040810] rounded-xl w-full py-3 px-6 focus:border-[#2c7ef8] dark:focus:border-[#3a86f8]"
+                />
+                <button
+                  type="submit"
+                  class="absolute rounded bg-[#2c7ef8] text-white dark:bg-[#3a86f8] py-1 px-3 left-2 top-1/2"
+                >
+                  ارسال
+                </button>
+              </form>
+            </div>
+            <div class="footer__inner__contact__info">
+              <div
+                class="footer__inner__contact__info__item footer__inner__contact__info__address rounded-lg py-5 px-3 shadow bg-[#ffffff] md:bg-transparent dark:md:bg-transparent dark:bg-[#081021] md:rounded-none md:p-0 md:shadow-none"
+              >
+                <div
+                  class="footer__inner__contact__info__item__image p-4 rounded-full bg-[#f5fbff] dark:bg-[#D4DEE814] dark:md:bg-transparent md:bg-transparent md:p-0 md:rounded-none"
+                >
+                  <img
+                    src="../assets/icons/map.svg"
+                    alt="Map"
+                    class="hidden md:block dark:hidden w-6"
+                  />
+                  <img
+                    src="../assets/icons/map-mobile.svg"
+                    alt="Map"
+                    class="dark:hidden md:hidden"
+                  />
+                  <img
+                    src="../assets/icons/map-mobile-dark.svg"
+                    alt="Map"
+                    class="hidden dark:block dark:md:w-4"
+                  />
+                </div>
+                <p class="footer__inner__contact__info__item__content">
+                  آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل-
+                  بن بست شب بو
+                </p>
+              </div>
+
+              <div
+                class="footer__inner__contact__info__item footer__inner__contact__info__phone rounded-lg py-5 px-3 shadow bg-[#ffffff] md:bg-transparent dark:md:bg-transparent dark:bg-[#081021] md:rounded-none md:p-0 md:shadow-none"
+              >
+                <div
+                  class="footer__inner__contact__info__item__image p-4 rounded-full bg-[#f5fbff] dark:bg-[#D4DEE814] dark:md:bg-transparent md:bg-transparent md:p-0 md:rounded-none"
+                >
+                  <img
+                    src="../assets/icons/call.svg"
+                    alt="Call"
+                    class="hidden md:block dark:hidden w-4"
+                  />
+                  <img
+                    src="../assets/icons/call-mobile.svg"
+                    alt="Call"
+                    class="dark:hidden md:hidden"
+                  />
+                  <img
+                    src="../assets/icons/call-mobile-dark.svg"
+                    alt="Call"
+                    class="hidden dark:block"
+                  />
+                </div>
+                <p class="footer__inner__contact__info__item__content">
+                  تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱
+                </p>
+              </div>
+
+              <div
+                class="footer__inner__contact__info__item footer__inner__contact__info__fax rounded-lg py-5 px-3 shadow bg-[#ffffff] md:bg-transparent dark:md:bg-transparent dark:bg-[#081021] md:rounded-none md:p-0 md:shadow-none"
+              >
+                <div
+                  class="footer__inner__contact__info__item__image p-4 rounded-full bg-[#f5fbff] dark:bg-[#D4DEE814] dark:md:bg-transparent md:bg-transparent md:p-0 md:rounded-none"
+                >
+                  <img
+                    src="../assets/icons/fax.svg"
+                    alt="Fax"
+                    class="hidden md:block dark:hidden w-4"
+                  />
+                  <img
+                    src="../assets/icons/fax-mobile.svg"
+                    alt="Fax"
+                    class="dark:hidden md:hidden"
+                  />
+                  <img
+                    src="../assets/icons/fax-mobile-dark.svg"
+                    alt="Fax"
+                    class="hidden dark:block"
+                  />
+                </div>
+                <p class="footer__inner__contact__info__item__content">
+                  فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="footer__inner__description text-[#666666]">
+            تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Finish Footer -->
+  </body>
+</html>

@@ -869,3 +869,223 @@
   }
 }
 // End About
+
+// Start Contact
+#contact-mobile {
+  @include screen-md {
+    display: none;
+  }
+}
+
+#contact-web {
+  display: none;
+  // my-8 px-8 py-10
+  margin: 32px auto;
+  padding: 40px 32px;
+
+  @include screen-md {
+    display: grid;
+    grid-template-columns: 1fr 64px 1fr;
+  }
+}
+
+.contact {
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__inner {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__information {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 100%;
+
+      &__content {
+        &__title {
+          @include kalameh-bold28;
+        }
+
+        &__description {
+          @include regular16;
+          margin-top: 16px;
+          margin-bottom: 24px;
+          color: #6f7076;
+        }
+
+        &__call {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 12px;
+
+          &__logo {
+            img {
+              width: 20px;
+            }
+          }
+
+          &__content {
+          }
+        }
+      }
+
+      &__social {
+        display: flex;
+        gap: 32px;
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+
+    &__line {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      padding-top: 24px;
+      @include kalameh-bold20;
+    }
+
+    &__description {
+      padding-top: 12px;
+      width: 80%;
+      text-align: center;
+      line-height: 1.7;
+      @include regular14;
+    }
+
+    &__form {
+      width: 100%;
+      padding: 16px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+
+      @include screen-md {
+        margin: 0;
+        padding: 0;
+      }
+
+      &__name {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        label {
+          @include regular13;
+        }
+
+        input {
+          width: 100%;
+          padding: 8px 12px;
+          border-radius: 6px;
+          outline: none;
+          @include regular13;
+        }
+
+        textarea {
+          width: 100%;
+          height: 128px;
+          padding: 8px 12px;
+          border-radius: 6px;
+          outline: none;
+        }
+
+        ::placeholder {
+          @include regular12;
+        }
+      }
+
+      &__btn {
+        margin-top: 8px;
+        @include regular14;
+        border-radius: 6px;
+
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 16px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 50%;
+
+        &__icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 14px;
+          }
+        }
+
+        &__content {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          &--large {
+            @include bold11;
+          }
+
+          &--small {
+            @include regular11;
+          }
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      margin-top: 16px;
+      gap: 16px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      &__item {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+}
+// End Contact

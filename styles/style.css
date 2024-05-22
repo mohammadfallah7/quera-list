@@ -992,4 +992,209 @@
   font-family: "Yekan Bakh";
   font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  #contact-mobile {
+    display: none;
+  }
+}
+
+#contact-web {
+  display: none;
+  margin: 32px auto;
+  padding: 40px 32px;
+}
+@media screen and (min-width: 768px) {
+  #contact-web {
+    display: grid;
+    grid-template-columns: 1fr 64px 1fr;
+  }
+}
+
+.contact__wrapper {
+  width: 100%;
+}
+.contact__inner {
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__inner__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.contact__inner__information__content__title {
+  font-family: "Kalameh";
+  font-size: 28px;
+  font-weight: 700;
+}
+.contact__inner__information__content__description {
+  font-family: "Yekan Bakh";
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  color: #6f7076;
+}
+.contact__inner__information__content__call {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.contact__inner__information__content__call__logo img {
+  width: 20px;
+}
+.contact__inner__information__social {
+  display: flex;
+  gap: 32px;
+}
+.contact__inner__information__social img {
+  width: 24px;
+}
+.contact__inner__line {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__inner__title {
+  padding-top: 24px;
+  font-family: "Kalameh";
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact__inner__description {
+  padding-top: 12px;
+  width: 80%;
+  text-align: center;
+  line-height: 1.7;
+  font-family: "Yekan Bakh";
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact__inner__form {
+  width: 100%;
+  padding: 16px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .contact__inner__form {
+    margin: 0;
+    padding: 0;
+  }
+}
+.contact__inner__form__name {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.contact__inner__form__row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.contact__inner__form__row label {
+  font-family: "Yekan Bakh";
+  font-size: 13px;
+  font-weight: 400;
+}
+.contact__inner__form__row input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  outline: none;
+  font-family: "Yekan Bakh";
+  font-size: 13px;
+  font-weight: 400;
+}
+.contact__inner__form__row textarea {
+  width: 100%;
+  height: 128px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  outline: none;
+}
+.contact__inner__form__row ::-moz-placeholder {
+  font-family: "Yekan Bakh";
+  font-size: 12px;
+  font-weight: 400;
+}
+.contact__inner__form__row ::placeholder {
+  font-family: "Yekan Bakh";
+  font-size: 12px;
+  font-weight: 400;
+}
+.contact__inner__form__btn {
+  margin-top: 8px;
+  font-family: "Yekan Bakh";
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 6px;
+  width: 100%;
+  padding: 12px 0;
+}
+.contact__inner__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+.contact__inner__info__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 50%;
+}
+.contact__inner__info__item__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__inner__info__item__icon img {
+  width: 14px;
+}
+.contact__inner__info__item__content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contact__inner__info__item__content--large {
+  font-family: "Yekan Bakh";
+  font-size: 11px;
+  font-weight: 700;
+}
+.contact__inner__info__item__content--small {
+  font-family: "Yekan Bakh";
+  font-size: 11px;
+  font-weight: 400;
+}
+.contact__inner__social {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.contact__inner__social__item {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__inner__social__item img {
+  width: 14px;
 }/*# sourceMappingURL=style.css.map */
