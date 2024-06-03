@@ -62,6 +62,23 @@
   font-family: "Yekan Bakh";
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fefefe;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 .header__wrapper {
   width: 100%;
 }
@@ -147,11 +164,16 @@
   }
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+}
+
 .introduce__wrapper {
   width: 100%;
+  position: relative;
 }
 .introduce__inner {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
