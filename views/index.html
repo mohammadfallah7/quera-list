@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>کوئرا لیست | تمرکز رو وارد زندگیت کن</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <script src="../scripts/index.js" defer></script>
   </head>
   <body
     class="bg-[#ffffff] text-[#191c1e] dark:bg-[#040810] dark:text-[#e6e9ef]"
@@ -59,6 +59,7 @@
               ورود به اپلیکیشن
             </button>
             <button
+              id="toggle-theme"
               class="header__actions__toggle rounded border border-solid border-[#e3e3e3] dark:border-[#2F3132]"
             >
               <img src="../assets/icons/toggle-theme.svg" alt="تغییر تم" />
@@ -148,12 +149,12 @@
             </div>
             <div class="introduce__inner__picture">
               <img
-                src="../assets/images/application-image-light.png"
+                src="../assets/images/quera-list-light.png"
                 alt="دمو اپلیکیشن"
                 class="dark:hidden"
               />
               <img
-                src="../assets/images/application-image-dark.png"
+                src="../assets/images/quera-list-dark.png"
                 alt="دمو اپلیکیشن"
                 class="hidden dark:block"
               />
@@ -287,12 +288,12 @@
               <h3 class="download__inner__right__title">دانلود اپلیکیشن</h3>
               <div class="download__inner__right__picture">
                 <img
-                  src="../assets/images/app-mobile-small-light.png"
+                  src="../assets/images/mobile-light.png"
                   alt="Application"
                   class="dark:hidden"
                 />
                 <img
-                  src="../assets/images/app-mobile-small-dark.png"
+                  src="../assets/images/mobile-dark.png"
                   alt="Application"
                   class="hidden dark:block"
                 />
@@ -318,24 +319,14 @@
             </div>
             <div class="download__inner__left relative">
               <img
-                src="../assets/images/app-web-light.png"
+                src="../assets/images/mobile-light.png"
                 alt="Application"
                 class="dark:hidden"
               />
               <img
-                src="../assets/images/app-web-dark.png"
+                src="../assets/images/mobile-dark.png"
                 alt="Application"
                 class="hidden dark:block"
-              />
-              <img
-                src="../assets/images/app-mobile-light.png"
-                alt="Application"
-                class="absolute top-6 right-14 dark:hidden md:w-24 md:right-8 lg:w-32 lg:right-12 xl:w-44"
-              />
-              <img
-                src="../assets/images/app-mobile-dark.png"
-                alt="Application"
-                class="absolute top-6 right-14 hidden dark:block md:w-24 md:right-8 lg:w-32 lg:right-12 xl:w-44"
               />
             </div>
           </div>

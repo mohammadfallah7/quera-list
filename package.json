@@ -1,0 +1,22 @@
+{
+  "name": "quera-list",
+  "version": "1.0.0",
+  "description": "![](./design/cover.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadfallah7/quera-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadfallah7/quera-list/issues"
+  },
+  "homepage": "https://github.com/mohammadfallah7/quera-list#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
