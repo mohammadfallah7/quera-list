@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>کوئرا لیست | تمرکز رو وارد زندگیت کن</title>
     <link rel="stylesheet" href="../dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="../scripts/index.js" defer></script>
   </head>
   <body
@@ -337,196 +341,212 @@
       <!-- Start Comment -->
       <div class="comment">
         <div class="comment__wrapper">
-          <div class="comment__inner container mx-auto">
-            <h3 class="comment__inner__title">نظرات کاربران</h3>
-            <p class="comment__inner__description">
+          <div class="comment__inner">
+            <h3 class="comment__title">نظرات کاربران</h3>
+            <p class="comment__description mx-auto">
               بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند
               تا سازماندهی شوند و به اهداف خود برسند.
             </p>
-            <div class="comment__inner__items">
-              <div
-                class="comment__inner__item rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
-              >
-                <div class="comment__inner__item__header">
-                  <div class="comment__inner__item__header__image">
-                    <img
-                      src="../assets/images/user1.png"
-                      alt="User"
-                      class="w-14 md:w-16 xl:w-auto"
-                    />
-                  </div>
-                  <div class="comment__inner__item__header__label">
-                    <h4 class="comment__inner__item__header__label--large">
-                      علی ملکی
-                    </h4>
-                    <span class="comment__inner__item__header__label--small"
-                      >مهندس نرم افزار دیجی کالا</span
-                    >
-                  </div>
-                </div>
-                <div class="comment__inner__item__content">
-                  <p>
-                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
-                    دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
-                    لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
-                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده
-                    تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
-                  </p>
-                </div>
-              </div>
 
-              <div
-                class="comment__inner__item rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
-              >
-                <div class="comment__inner__item__header">
-                  <div class="comment__inner__item__header__image">
-                    <img
-                      src="../assets/images/user2.png"
-                      alt="User"
-                      class="w-14 md:w-16 xl:w-auto"
-                    />
+            <div class="swiper-container">
+              <div class="swiper-wrapper comment__items">
+                <div
+                  class="comment__item swiper-slide rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
+                >
+                  <div class="comment__item__header">
+                    <div class="comment__item__header__image">
+                      <img
+                        src="../assets/images/user1.png"
+                        alt="User"
+                        class="w-14 md:w-16 xl:w-auto"
+                      />
+                    </div>
+                    <div class="comment__item__header__label">
+                      <h4 class="comment__item__header__label--large">
+                        علی ملکی
+                      </h4>
+                      <span class="comment__item__header__label--small"
+                        >مهندس نرم افزار دیجی کالا</span
+                      >
+                    </div>
                   </div>
-                  <div class="comment__inner__item__header__label">
-                    <h4 class="comment__inner__item__header__label--large">
-                      علی ملکی
-                    </h4>
-                    <span class="comment__inner__item__header__label--small"
-                      >مهندس نرم افزار دیجی کالا</span
-                    >
+                  <div class="comment__item__content">
+                    <p>
+                      تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
+                      دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
+                      لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و
+                      سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای
+                      ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                      ببریم.
+                    </p>
                   </div>
                 </div>
-                <div class="comment__inner__item__content">
-                  <p>
-                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
-                    دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
-                    لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                  </p>
-                </div>
-              </div>
 
-              <div
-                class="comment__inner__item rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
-              >
-                <div class="comment__inner__item__header">
-                  <div class="comment__inner__item__header__image">
-                    <img
-                      src="../assets/images/user3.png"
-                      alt="User"
-                      class="w-14 md:w-16 xl:w-auto"
-                    />
+                <div
+                  class="comment__item swiper-slide rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
+                >
+                  <div class="comment__item__header">
+                    <div class="comment__item__header__image">
+                      <img
+                        src="../assets/images/user2.png"
+                        alt="User"
+                        class="w-14 md:w-16 xl:w-auto"
+                      />
+                    </div>
+                    <div class="comment__item__header__label">
+                      <h4 class="comment__item__header__label--large">
+                        علی ملکی
+                      </h4>
+                      <span class="comment__item__header__label--small"
+                        >مهندس نرم افزار دیجی کالا</span
+                      >
+                    </div>
                   </div>
-                  <div class="comment__inner__item__header__label">
-                    <h4 class="comment__inner__item__header__label--large">
-                      علی ملکی
-                    </h4>
-                    <span class="comment__inner__item__header__label--small"
-                      >مهندس نرم افزار دیجی کالا</span
-                    >
+                  <div class="comment__item__content">
+                    <p>
+                      تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
+                      دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
+                      لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و
+                      سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای
+                      ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                      ببریم.
+                    </p>
                   </div>
                 </div>
-                <div class="comment__inner__item__content">
-                  <p>
-                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
-                    دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
-                    لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
-                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده
-                    تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
-                  </p>
-                </div>
-              </div>
 
-              <div
-                class="comment__inner__item rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
-              >
-                <div class="comment__inner__item__header">
-                  <div class="comment__inner__item__header__image">
-                    <img
-                      src="../assets/images/user4.png"
-                      alt="User"
-                      class="w-14 md:w-16 xl:w-auto"
-                    />
+                <div
+                  class="comment__item swiper-slide rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
+                >
+                  <div class="comment__item__header">
+                    <div class="comment__item__header__image">
+                      <img
+                        src="../assets/images/user3.png"
+                        alt="User"
+                        class="w-14 md:w-16 xl:w-auto"
+                      />
+                    </div>
+                    <div class="comment__item__header__label">
+                      <h4 class="comment__item__header__label--large">
+                        علی ملکی
+                      </h4>
+                      <span class="comment__item__header__label--small"
+                        >مهندس نرم افزار دیجی کالا</span
+                      >
+                    </div>
                   </div>
-                  <div class="comment__inner__item__header__label">
-                    <h4 class="comment__inner__item__header__label--large">
-                      علی ملکی
-                    </h4>
-                    <span class="comment__inner__item__header__label--small"
-                      >مهندس نرم افزار دیجی کالا</span
-                    >
+                  <div class="comment__item__content">
+                    <p>
+                      تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
+                      دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
+                      لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و
+                      سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای
+                      ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                      ببریم.
+                    </p>
                   </div>
                 </div>
-                <div class="comment__inner__item__content">
-                  <p>
-                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
-                    دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
-                    لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                  </p>
-                </div>
-              </div>
 
-              <div
-                class="comment__inner__item rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
-              >
-                <div class="comment__inner__item__header">
-                  <div class="comment__inner__item__header__image">
-                    <img
-                      src="../assets/images/user5.png"
-                      alt="User"
-                      class="w-14 md:w-16 xl:w-auto"
-                    />
+                <div
+                  class="comment__item swiper-slide rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
+                >
+                  <div class="comment__item__header">
+                    <div class="comment__item__header__image">
+                      <img
+                        src="../assets/images/user4.png"
+                        alt="User"
+                        class="w-14 md:w-16 xl:w-auto"
+                      />
+                    </div>
+                    <div class="comment__item__header__label">
+                      <h4 class="comment__item__header__label--large">
+                        علی ملکی
+                      </h4>
+                      <span class="comment__item__header__label--small"
+                        >مهندس نرم افزار دیجی کالا</span
+                      >
+                    </div>
                   </div>
-                  <div class="comment__inner__item__header__label">
-                    <h4 class="comment__inner__item__header__label--large">
-                      علی ملکی
-                    </h4>
-                    <span class="comment__inner__item__header__label--small"
-                      >مهندس نرم افزار دیجی کالا</span
-                    >
+                  <div class="comment__item__content">
+                    <p>
+                      تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
+                      دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
+                      لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و
+                      سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای
+                      ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                      ببریم.
+                    </p>
                   </div>
                 </div>
-                <div class="comment__inner__item__content">
-                  <p>
-                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
-                    دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
-                    لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
-                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده
-                    تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
-                  </p>
-                </div>
-              </div>
 
-              <div
-                class="comment__inner__item rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
-              >
-                <div class="comment__inner__item__header">
-                  <div class="comment__inner__item__header__image">
-                    <img
-                      src="../assets/images/user6.png"
-                      alt="User"
-                      class="w-14 md:w-16 xl:w-auto"
-                    />
+                <div
+                  class="comment__item swiper-slide rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
+                >
+                  <div class="comment__item__header">
+                    <div class="comment__item__header__image">
+                      <img
+                        src="../assets/images/user5.png"
+                        alt="User"
+                        class="w-14 md:w-16 xl:w-auto"
+                      />
+                    </div>
+                    <div class="comment__item__header__label">
+                      <h4 class="comment__item__header__label--large">
+                        علی ملکی
+                      </h4>
+                      <span class="comment__item__header__label--small"
+                        >مهندس نرم افزار دیجی کالا</span
+                      >
+                    </div>
                   </div>
-                  <div class="comment__inner__item__header__label">
-                    <h4 class="comment__inner__item__header__label--large">
-                      علی ملکی
-                    </h4>
-                    <span class="comment__inner__item__header__label--small"
-                      >مهندس نرم افزار دیجی کالا</span
-                    >
+                  <div class="comment__item__content">
+                    <p>
+                      تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
+                      دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
+                      لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و
+                      سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای
+                      ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                      ببریم.
+                    </p>
                   </div>
                 </div>
-                <div class="comment__inner__item__content">
-                  <p>
-                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
-                    دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
-                    لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                  </p>
+
+                <div
+                  class="comment__item swiper-slide rounded-lg bg-[#FFFFFF] dark:bg-[#0B192D] shadow"
+                >
+                  <div class="comment__item__header">
+                    <div class="comment__item__header__image">
+                      <img
+                        src="../assets/images/user6.png"
+                        alt="User"
+                        class="w-14 md:w-16 xl:w-auto"
+                      />
+                    </div>
+                    <div class="comment__item__header__label">
+                      <h4 class="comment__item__header__label--large">
+                        علی ملکی
+                      </h4>
+                      <span class="comment__item__header__label--small"
+                        >مهندس نرم افزار دیجی کالا</span
+                      >
+                    </div>
+                  </div>
+                  <div class="comment__item__content">
+                    <p>
+                      تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از
+                      دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا
+                      لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و
+                      سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای
+                      ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت
+                      ببریم.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="comment__inner__slid flex">
+
+            <div class="comment__actions">
               <button
-                class="comment__inner__slid--right ml-6 px-4 py-2 rounded-md border dark:border-none dark:bg-[#0B192D]"
+                class="button-next ml-6 px-4 py-2 rounded-md border dark:border-none dark:bg-[#0B192D]"
               >
                 <img
                   src="../assets/icons/chevron-right.svg"
@@ -540,7 +560,7 @@
                 />
               </button>
               <button
-                class="comment__inner__slid--left px-4 py-2 rounded-md border dark:border-none dark:bg-[#0B192D]"
+                class="button-prev px-4 py-2 rounded-md border dark:border-none dark:bg-[#0B192D]"
               >
                 <img
                   src="../assets/icons/chevron-left-dark.svg"
@@ -684,5 +704,7 @@
       </div>
     </footer>
     <!-- Finish Footer -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

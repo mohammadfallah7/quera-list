@@ -3441,13 +3441,10 @@ main {
 }
 
 .comment__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0 32px;
 }
 
-.comment__inner__title {
+.comment__title {
   padding: 0 32px;
   text-align: center;
   font-family: "Kalameh";
@@ -3458,7 +3455,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .comment__inner__title {
+  .comment__title {
     font-family: "Kalameh";
     font-size: 28px;
     font-weight: 400;
@@ -3466,7 +3463,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  .comment__inner__title {
+  .comment__title {
     font-family: "Kalameh";
     font-size: 32px;
     font-weight: 400;
@@ -3474,7 +3471,7 @@ main {
   }
 }
 
-.comment__inner__description {
+.comment__description {
   padding: 0 64px;
   text-align: center;
   font-family: "Yekan Bakh";
@@ -3485,7 +3482,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .comment__inner__description {
+  .comment__description {
     margin-bottom: 40px;
     font-family: "Yekan Bakh";
     font-size: 14px;
@@ -3494,7 +3491,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  .comment__inner__description {
+  .comment__description {
     font-family: "Yekan Bakh";
     font-size: 15px;
     font-weight: 400;
@@ -3502,106 +3499,48 @@ main {
   }
 }
 
-.comment__inner__items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .comment__inner__items {
-    padding: 0 32px;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    align-items: unset;
-    justify-content: unset;
-  }
-}
-
-.comment__inner__item {
+.comment__item {
   padding: 24px;
-  display: none;
 }
 
-.comment__inner__item:nth-child(2) {
-  display: unset;
-  width: 70%;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .comment__inner__item {
-    display: unset;
-  }
-
-  .comment__inner__item:nth-child(1) {
-    grid-row: 1/3;
-  }
-
-  .comment__inner__item:nth-child(2) {
-    grid-row: 1/2;
-    width: unset;
-    margin: unset;
-  }
-
-  .comment__inner__item:nth-child(3) {
-    grid-row: 1/3;
-  }
-
-  .comment__inner__item:nth-child(4) {
-    grid-row: 3/4;
-  }
-
-  .comment__inner__item:nth-child(5) {
-    grid-row: 2/4;
-  }
-
-  .comment__inner__item:nth-child(6) {
-    grid-row: 3/4;
-  }
-}
-
-.comment__inner__item__header {
+.comment__item__header {
   display: flex;
   align-items: center;
 }
 
-.comment__inner__item__header__image {
+.comment__item__header__image {
   margin-left: 10px;
 }
 
-.comment__inner__item__header__label--large {
+.comment__item__header__label--large {
   font-family: "Kalameh";
   font-size: 14px;
   font-weight: 700;
 }
 
 @media screen and (min-width: 1024px) {
-  .comment__inner__item__header__label--large {
+  .comment__item__header__label--large {
     font-family: "Kalameh";
     font-size: 15px;
     font-weight: 700;
   }
 }
 
-.comment__inner__item__header__label--small {
+.comment__item__header__label--small {
   font-family: "Yekan Bakh";
   font-size: 12px;
   font-weight: 400;
 }
 
 @media screen and (min-width: 1024px) {
-  .comment__inner__item__header__label--small {
+  .comment__item__header__label--small {
     font-family: "Yekan Bakh";
     font-size: 13px;
     font-weight: 400;
   }
 }
 
-.comment__inner__item__content {
+.comment__item__content {
   margin-top: 24px;
   line-height: 1.7;
   font-family: "Yekan Bakh";
@@ -3610,15 +3549,18 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  .comment__inner__item__content {
+  .comment__item__content {
     font-family: "Yekan Bakh";
     font-size: 14px;
     font-weight: 400;
   }
 }
 
-.comment__inner__slid {
-  margin-top: 32px;
+.comment__actions {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__wrapper {

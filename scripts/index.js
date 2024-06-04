@@ -16,4 +16,29 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("theme", "light");
     }
   });
+
+  const swiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
+    spaceBetween: 16,
+    rtl: true,
+    slidesPerView: 1,
+
+    autoplay: {
+      delay: 3000,
+    },
+
+    navigation: {
+      nextEl: ".button-prev",
+      prevEl: ".button-next",
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
